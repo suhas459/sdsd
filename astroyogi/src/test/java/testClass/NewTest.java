@@ -60,6 +60,17 @@ public class NewTest  extends baseClass{
 		driver.close();
 		Thread.sleep(8000);
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
   }
 	
 	

@@ -1352,3 +1352,9 @@ java -ea -classpath C:\Users\SUHAS\eclipse\java-2022-062\eclipse\configuration\o
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2023-07-29 15:29:25.386
 !MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-07-29 15:31:22.171
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-07-29 15:31:22.173
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
