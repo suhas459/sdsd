@@ -49,6 +49,14 @@ public class NewTest  extends baseClass{
 		gm.matchYourKundli();
 		
 		
+		
+		
+		
+		
+		
+		
+		
+		
 		driver.close();
 		Thread.sleep(8000);
 		
