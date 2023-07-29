@@ -1,0 +1,37 @@
+package testClass;
+
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import base.baseClass;
+import practoPomClasses.attribute;
+
+public class NewTest extends baseClass {
+  
+	attribute a;
+	
+	@BeforeMethod
+	public void StepsTolaunch() {
+		
+		launchTheBrowser();
+	 a= new attribute(driver);
+		
+	}
+	
+	@Test
+  public void f() throws InterruptedException {
+		
+		a.getAtt();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		Thread.sleep(8000);
+		driver.close();
+  }
+}

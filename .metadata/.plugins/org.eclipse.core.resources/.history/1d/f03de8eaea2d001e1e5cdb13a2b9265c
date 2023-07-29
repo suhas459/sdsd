@@ -1,0 +1,31 @@
+package testClass;
+
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import baseClass.BaseClass;
+import travelTrianglePOMClasses.dashBoardPage;
+
+
+public class NewTest extends BaseClass{
+  
+	
+	dashBoardPage d;
+	
+	
+	@BeforeMethod
+	public void stepsToLaunch() {
+		launchTheBrowser();
+		d= new dashBoardPage(driver);
+		
+	 
+	}
+	
+	
+	@Test
+  public void f() {
+		d.ClickAndHoldsometimes(driver);
+		
+		
+  }
+}

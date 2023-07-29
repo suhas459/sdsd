@@ -1,0 +1,31 @@
+package testClass;
+
+import org.testng.Reporter;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import baseClass.baseClass;
+
+public class NewTest extends baseClass {
+  
+	
+	
+	
+	
+	@BeforeMethod
+	public void stepsToLaunchPracto() {
+	browserLaunch();
+		
+		
+		
+		
+	}
+	
+	
+	
+	
+	@Test
+  public void f() {
+		Reporter.log("launch The Browser", true);
+  }
+}

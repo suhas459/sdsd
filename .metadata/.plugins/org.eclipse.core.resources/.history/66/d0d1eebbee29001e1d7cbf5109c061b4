@@ -1,0 +1,33 @@
+package testClass;
+
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import baseClass.BaseClass;
+import baseClass.baseClass;
+import pomClasses.boysKundliMatch;
+import pomClasses.dashBoardPage;
+import pomClasses.girlKundliMatch;
+import pomClasses.matchMaking;
+
+public class NewTest extends BaseClass{
+  
+	
+	
+	
+	
+	@BeforeMethod
+	public void stepsToLaunch() {
+		launchTheBrowser();
+		
+	 
+	}
+	
+	
+	@Test
+  public void f() {
+		launchTheBrowser();
+		
+		
+  }
+}

@@ -1,0 +1,31 @@
+package base;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+import utility.utilityMethods;
+
+public class baseClass {
+public 	WebDriver driver;
+	public void launchTheBrowser() {
+		
+		
+		
+		WebDriverManager.chromedriver().setup();
+		ChromeOptions c= new ChromeOptions();
+		c.addArguments("--remote-allow-origins=*");
+		c.addArguments("--start-maximized");
+	driver= new ChromeDriver(c);
+		
+		utilityMethods.implicitWaitMathod(driver, 10);
+		driver.get("https://www.practo.com/");
+	//	utilityMethods.implicitWaitMathod(driver, 10);
+		
+		
+		
+		
+	}
+	
+}

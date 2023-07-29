@@ -1,0 +1,46 @@
+package travelTrianglePOMClasses;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import utility.utility;
+
+public class ukPage {
+
+	
+	@FindBy(xpath="(//label[@class='block AP_WEMI'])[2]") private WebElement packages;
+	@FindBy(xpath="rsc-header-close-button sc-fjdhpX jzxiHw") private WebElement cross;
+	@FindBy(xpath="//button[@class='close-popup']") private WebElement cr;
+	public ukPage(WebDriver driver) {
+		PageFactory.initElements(driver, this);
+	}
+	
+	
+	public void clickOnPack(WebDriver driver) throws InterruptedException {
+//	
+//		utility.scrollIntoView(driver, packages);
+//		
+//		packages.click();
+		
+		//cr.click();
+		Thread.sleep(4000);
+		Actions a= new Actions (driver);
+		a.moveToElement(packages).build().perform();
+		Thread.sleep(2000);
+		packages.click();
+		Thread.sleep(4000);
+		cross.click();
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+}

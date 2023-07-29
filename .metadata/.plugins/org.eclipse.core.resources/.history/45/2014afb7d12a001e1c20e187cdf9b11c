@@ -1,0 +1,71 @@
+package testClass;
+
+import org.testng.Assert;
+import org.testng.Reporter;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import cricBaseClass.baseClass;
+import cricPomClasses.ScoreCrdPage;
+import cricPomClasses.dashBoardPage;
+import cricPomClasses.indWIMatchResultPage;
+
+public class NewTest extends baseClass{
+	ScoreCrdPage scp;
+	dashBoardPage dp;
+	indWIMatchResultPage ip;
+	@BeforeMethod
+	public void stepsTolaunch() {
+		launchTheBaseClass();
+		 dp= new dashBoardPage(driver);
+		 ip=new indWIMatchResultPage(driver);
+	 scp= new ScoreCrdPage(driver);
+		
+	}
+	
+	
+	@Test (priority = -1)
+  public void stringMatch() {
+		
+		String act = "Match drawn";
+		Reporter.log("check dashboard page string match", true);
+	Assert.assertEquals(dp.match(), act, "String is not match , then tc is failed");
+		
+  }
+	
+	@Test 
+	public void captainStringMatch() throws InterruptedException {
+		dp.ClickOnDrwan();
+		String a="Rohit Sharma | India captain:";
+		String e = ip.captainNameMatch();
+		Reporter.log("check captain name matched", true);
+		Assert.assertEquals(e, a, "both are not same tc is failed");
+		//ip.clickOnScoreCard();
+		
+	}
+	
+	@Test 
+	public void ScoreStringMatch() throws InterruptedException {
+		
+		String exp="57";
+		String actRes=scp.matchScore();
+		Reporter.log("check Score name matched", true);
+		Assert.assertEquals(exp,actRes,"not same tc is failed");
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	@AfterMethod
+	public void closetheBrowser() throws InterruptedException {
+		Thread.sleep(7500);
+		Reporter.log("close the browser", true);
+		driver.close();
+	}
+	
+}

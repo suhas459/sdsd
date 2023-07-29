@@ -1,0 +1,27 @@
+package cricBaseClass;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class baseClass {
+	protected WebDriver driver;
+	
+public void launchTheBaseClass() {
+	
+	
+	
+	
+	WebDriverManager.chromedriver().setup();
+	ChromeOptions c= new ChromeOptions();
+	c.addArguments("--remote-allow-origins=*");
+	
+ driver= new ChromeDriver(c);
+	
+	driver.navigate().to("https://www.cricbuzz.com/");
+	
+	
+}
+}

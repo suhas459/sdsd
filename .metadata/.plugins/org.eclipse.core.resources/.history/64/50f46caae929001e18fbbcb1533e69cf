@@ -1,0 +1,42 @@
+package baseClass;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class baseClass {
+	public ChromeDriver driver;
+	
+public void launchTheBrowser() {
+	
+	WebDriverManager.chromedriver().setup();
+
+	
+	//WebDriverManager.firefoxdriver().setup();
+	
+driver= new ChromeDriver();
+	
+	
+	
+	driver.navigate().to("https://traveltriangle.com/");
+	
+	
+	
+	
+	
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

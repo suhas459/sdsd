@@ -1,0 +1,58 @@
+package testClass;
+
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import base.baseClass;
+import practoPomClasses.attribute;
+import practoPomClasses.searchProduct;
+import utility.utilityMethods;
+
+
+public class NewTest extends baseClass {
+  
+	attribute a;
+	searchProduct s;
+	
+	@BeforeMethod
+	public void StepsTolaunch() {
+		
+		launchTheBrowser();
+	 a= new attribute(driver);
+	 s= new searchProduct(driver);
+		
+	}
+	
+	@Test (enabled = false)
+  public void f() throws InterruptedException {
+		
+		
+		a.clickOnMedicines();
+		
+//		Thread.sleep(8000);
+//		driver.close();
+  }
+	
+
+	@Test
+  public void g() throws InterruptedException {
+		a.clickOnMedicines();
+		Thread.sleep(4000);
+		s.clickOnSearchProduts(driver);
+		
+  }
+	
+	
+	
+	@AfterMethod
+	public void closethebroser() throws InterruptedException {
+		Thread.sleep(9000);
+		driver.close();
+	}
+	
+	
+	
+	
+	
+}

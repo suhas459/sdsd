@@ -1,0 +1,42 @@
+package practoPomClasses;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
+import org.testng.Reporter;
+
+import utility.utilityMethods;
+public class searchProduct {
+
+	@FindBy (xpath="(//div[text()='Zole-f Skin Ointment'])[1]")private WebElement skin;
+	
+	@FindBy(xpath="(//input[@type='text'])[1]") private WebElement searchProduct;
+	
+	public searchProduct(WebDriver driver) {
+		PageFactory.initElements(driver, this);
+	}
+	
+	public String moveToSkin() {
+		
+		
+		return skin.getText();
+		
+		
+	}
+	
+	public  void clickOnSearchProduts(WebDriver driver) throws InterruptedException {
+		
+	//	boolean sea = searchProduct.isEnabled();
+		//Assert.assertTrue(sea,"is not enable then tc is failed");
+		Thread.sleep(4500);
+		searchProduct.sendKeys("skin");
+		utilityMethods.moveToElement(skin, driver);
+		
+	}
+	
+	
+	
+	
+}

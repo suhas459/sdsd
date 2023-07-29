@@ -1,0 +1,12 @@
+package testClass;
+
+import org.testng.annotations.Test;
+
+import cricBaseClass.baseClass;
+
+public class NewTest extends baseClass{
+  @Test
+  public void f() {
+	  launchTheBaseClass();
+  }
+}

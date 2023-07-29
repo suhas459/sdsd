@@ -1,0 +1,32 @@
+package baseClass;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class BaseClass {
+	public WebDriver driver;
+	
+public void launchTheBrowser() {
+	
+	//WebDriverManager.chromedriver().setup();
+
+	
+	WebDriverManager.firefoxdriver().setup();
+	ChromeOptions c= new ChromeOptions();
+	c.addArguments("--remote-allow-origins=*");
+	c.addArguments("--start-maximized");
+	c.addArguments("--incognito");
+	c.addArguments("--disable-notification");
+driver= new ChromeDriver(c);
+	
+	
+//driver= new FirefoxDriver();
+	driver.navigate().to("https://traveltriangle.com/");
+	
+	
+}
+		
+	
+}
