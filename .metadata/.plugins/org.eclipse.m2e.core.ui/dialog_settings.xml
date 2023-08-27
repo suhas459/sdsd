@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\SUHAS\Desktop\default\astroyogi"/>
 			<item value="C:\Users\SUHAS\Desktop\default\cric\pom.xml"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -44,6 +45,11 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="childBrowser"/>
+			<item value="vestige"/>
+			<item value="bddGoogleFeature"/>
+			<item value="flip"/>
+			<item value="fb"/>
 			<item value="mmt"/>
 			<item value="p"/>
 			<item value="practo"/>
@@ -58,6 +64,11 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="childBrowser"/>
+			<item value="vestige"/>
+			<item value="bddGoogleFeature"/>
+			<item value="Flipcart"/>
+			<item value="fb"/>
 			<item value="MMT"/>
 			<item value="p"/>
 			<item value="practo"/>
@@ -68,7 +79,6 @@
 			<item value="ff"/>
 			<item value="astroyogi123"/>
 			<item value="astroyogi"/>
-			<item value="policyBazar"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[launch the Browser]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-08-26T12:50:06 IST" name="Default suite" finished-at="2023-08-26T12:50:23 IST" duration-ms="17290">
+    <groups>
+    </groups>
+    <test started-at="2023-08-26T12:50:06 IST" name="Default test" finished-at="2023-08-26T12:50:23 IST" duration-ms="17290">
+      <class name="testNgClass.NewTest">
+        <test-method is-config="true" signature="stepsToLaunch()[pri:0, instance:testNgClass.NewTest@64cd705f]" started-at="2023-08-26T12:50:06 IST" name="stepsToLaunch" finished-at="2023-08-26T12:50:20 IST" duration-ms="14452" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[launch the Browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- stepsToLaunch -->
+        <test-method signature="f()[pri:0, instance:testNgClass.NewTest@64cd705f]" started-at="2023-08-26T12:50:20 IST" name="f" finished-at="2023-08-26T12:50:23 IST" duration-ms="2788" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+      </class> <!-- testNgClass.NewTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

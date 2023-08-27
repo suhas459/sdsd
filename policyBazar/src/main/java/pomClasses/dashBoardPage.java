@@ -24,9 +24,9 @@ public void gettextofLogo(WebDriver driver) throws InterruptedException {
 
 	
 	String st1 = logo.getText();
-	
+	Reporter.log("okkk", true);
 	String st2 = "Best Insurance";
-	
+	Reporter.log("click on health insurance", true);
 	Assert.assertEquals(st1,st2, "if not same our test case is failed");
 	
 	Thread.sleep(3500);
